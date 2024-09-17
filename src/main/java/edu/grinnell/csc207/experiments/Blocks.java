@@ -7,6 +7,7 @@ import edu.grinnell.csc207.blocks.Boxed;
 import edu.grinnell.csc207.blocks.Empty;
 import edu.grinnell.csc207.blocks.Line;
 import edu.grinnell.csc207.blocks.Rectangle;
+import edu.grinnell.csc207.blocks.Surrounded;
 
 /**
  * Experiments with ASCII blocks.
@@ -77,7 +78,25 @@ public class Blocks {
     AsciiBlock b9 = new Boxed(b8);
     AsciiBlock.print(pen, b9);
 
-    
+    separator(pen);
+    pen.printf("s1 = new Surrounded(s1)\n\n");
+    AsciiBlock s1 = new Surrounded(new Line("A"), '*');
+    AsciiBlock.print(pen, s1);
+
+    separator(pen);
+    pen.printf("s1 = new Surrounded(s2)\n\n");
+    AsciiBlock s2 = new Surrounded(new Surrounded(new Line("A"), ' '), '*');
+    AsciiBlock.print(pen, s2);
+
+    separator(pen);
+    pen.printf("s1 = new Surrounded(s3)\n\n");
+    AsciiBlock s3 = new Surrounded(new Surrounded(new Line("A"), 'B'), 'C');
+    AsciiBlock.print(pen, s3);
+
+
+
+
+
     pen.close();
   } // main(String[])
 } // class Blocks
