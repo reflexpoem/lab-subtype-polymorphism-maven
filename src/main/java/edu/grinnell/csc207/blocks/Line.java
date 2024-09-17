@@ -2,6 +2,7 @@ package edu.grinnell.csc207.blocks;
 
 /**
  * One line of text.
+ * @author Yash & Sunjae
  */
 public class Line implements AsciiBlock {
   // +--------+------------------------------------------------------------

@@ -4,6 +4,7 @@ package edu.grinnell.csc207.blocks;
  * A rectangular block of one repeated character.
  *
  * @author Samuel A. Rebelsky
+ * @author Yash & Sunjae
  */
 public class Rectangle implements AsciiBlock {
   // +--------+------------------------------------------------------------

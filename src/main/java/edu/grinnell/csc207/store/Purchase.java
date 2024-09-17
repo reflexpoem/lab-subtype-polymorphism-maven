@@ -2,6 +2,7 @@ package edu.grinnell.csc207.store;
 
 /**
  * Things people might purchase.
+ * @author Yash & Sunjae
  */
 public interface Purchase {
   // +---------+-----------------------------------------------------

@@ -2,6 +2,7 @@ package edu.grinnell.csc207.store;
 
 /**
  * Items purchased individually.
+ * @author Yash & Sunjae
  */
 public class Item implements Purchase {
   // +--------+------------------------------------------------------

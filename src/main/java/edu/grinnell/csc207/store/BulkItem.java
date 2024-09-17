@@ -2,6 +2,7 @@ package edu.grinnell.csc207.store;
 
 /**
  * Items purchased in bulk (by weight).
+ * @author Yash & Sunjae
  */
 public class BulkItem implements Purchase {
   // +--------+------------------------------------------------------

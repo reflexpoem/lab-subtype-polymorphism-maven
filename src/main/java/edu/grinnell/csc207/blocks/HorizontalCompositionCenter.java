@@ -4,7 +4,7 @@ package edu.grinnell.csc207.blocks;
  * The center-aligned horizontal composition of two blocks.
  *
  * @author Samuel A. Rebelsky
- * @author Your Name Here
+ * @author Yash & Sunjae
  */
 public class HorizontalCompositionCenter implements AsciiBlock {
   // +--------+------------------------------------------------------------

@@ -4,6 +4,7 @@ import java.io.PrintWriter;
 
 /**
  * Utilities for maintaining a store.
+ * @author Yash & Sunjae
  */
 public interface StoreUtils {
   // +-----------+---------------------------------------------------

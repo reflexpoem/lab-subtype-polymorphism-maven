@@ -1,21 +1,17 @@
 package edu.grinnell.csc207.experiments;
 
+import java.io.PrintWriter;
+
 import edu.grinnell.csc207.blocks.AsciiBlock;
 import edu.grinnell.csc207.blocks.Boxed;
-// import edu.grinnell.csc207.blocks.HorizontalCompositionCenter;
-// import edu.grinnell.csc207.blocks.HorizontalCompositionTop;
 import edu.grinnell.csc207.blocks.Line;
 import edu.grinnell.csc207.blocks.Rectangle;
-// import edu.grinnell.csc207.blocks.Surrounded;
-// import edu.grinnell.csc207.blocks.VerticalCompositionLeft;
-
-import java.io.PrintWriter;
 
 /**
  * Experiments with ASCII blocks.
  *
  * @author Samuel A. Rebelsky
- * @author Your Name Here
+ * @author Yash & Sunjae
  */
 public class Blocks {
   /**
