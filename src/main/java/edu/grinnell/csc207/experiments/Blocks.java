@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 import edu.grinnell.csc207.blocks.AsciiBlock;
 import edu.grinnell.csc207.blocks.Boxed;
 import edu.grinnell.csc207.blocks.Empty;
+import edu.grinnell.csc207.blocks.HorizontalCompositionTop;
 import edu.grinnell.csc207.blocks.Line;
 import edu.grinnell.csc207.blocks.Rectangle;
 import edu.grinnell.csc207.blocks.Surrounded;
@@ -94,8 +95,29 @@ public class Blocks {
     AsciiBlock.print(pen, s3);
 
 
+    AsciiBlock exes = new Rectangle('X', 3, 5);
+    AsciiBlock ohs = new Rectangle('O', 4, 2);
 
+    separator(pen);
+    AsciiBlock.print(pen, new HorizontalCompositionTop(exes, ohs));
 
+    separator(pen);
+    AsciiBlock.print(pen, new HorizontalCompositionTop(ohs, exes));
+
+    separator(pen);
+    AsciiBlock.print(pen, new HorizontalCompositionTop(exes, exes));
+
+    AsciiBlock comp1 =
+      new HorizontalCompositionTop(exes, new HorizontalCompositionTop(ohs, exes));
+    AsciiBlock.print(pen, comp1);
+
+    pen.println("-------------------------------");
+    AsciiBlock comp2 =
+      new HorizontalCompositionTop(new HorizontalCompositionTop(exes, ohs), exes);
+    AsciiBlock.print(pen, comp2);
+
+    AsciiBlock boxedcomp = new Boxed(new HorizontalCompositionTop(exes, ohs));
+    AsciiBlock.print(pen, boxedcomp);
 
     pen.close();
   } // main(String[])
